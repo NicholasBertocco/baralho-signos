@@ -1,95 +1,39 @@
-import Image from "next/image";
+import Topo from './componentes/Topo';
+import Card from './componentes/Card';
 import styles from "./page.module.css";
+import Aquario from '../../public/Aquario.png'
+import Aries from '../../public/Aries.png'
+import Cancer from '../../public/Cancer.png'
+import Capricornio from '../../public/Capricornio.png'
+import Escorpiao from '../../public/Escorpiao.png'
+import Gemeos from '../../public/Gemeos.png'
+import Leao from '../../public/Leão.png'
+import Libra from '../../public/Libra.png'
+import Peixes from '../../public/Peixes.png'
+import Sagitario from '../../public/Sagitario.png'
+import Touro from '../../public/Touro.png'
+import Virgem from '../../public/Virgem.png'
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+      <Topo />
+      <main className={styles.conteinerMain}>
+        <section className={styles.secaoBaralho}>
+          <Card signo={'Aquário'} imagem={Aquario} data={'21/01 - 19/02'} />
+          <Card signo={'Peixes'} imagem={Peixes} data={'20/02 - 20/03'}/>
+          <Card signo={'Áries'} imagem={Aries} data={'21/03 - 20/04'} />
+          <Card signo={'Touro'} imagem={Touro} data={'21/04 - 21/05'}  />
+          <Card signo={'Gêmeos'} imagem={Gemeos} data={'22/05 - 21/06'} />
+          <Card signo={'Câncer'} imagem={Cancer} data={'22/06 - 23/07'} />
+          <Card signo={'Leão'} imagem={Leao} data={'24/07 - 23/08'} />
+          <Card signo={'Virgem'} imagem={Virgem} data={'24/08 - 23/09'} />
+          <Card signo={'Libra'} imagem={Libra} data={'24/09 - 23/10'} />
+          <Card signo={'Escorpião'} imagem={Escorpiao} data={'24/10 - 22/11'} />
+          <Card signo={'Sagitário'} imagem={Sagitario} data={'23/11 - 21/12'} />
+          <Card signo={'Capricórnio'} imagem={Capricornio} data={'22/12 - 20/01'} />
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }

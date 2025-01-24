@@ -1,0 +1,24 @@
+.Card{
+    background-color: rgb(59, 79, 174);
+    width:200px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px;
+}
+.Card img{
+    width:150px;
+    height: 150px;
+}
+.Card h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Card span{
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+}

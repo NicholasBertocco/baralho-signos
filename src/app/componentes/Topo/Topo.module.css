@@ -1,0 +1,12 @@
+.Topo{
+    background-color: rgb(136, 87, 182);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.Topo h1{
+    font-size: 20px;
+}
