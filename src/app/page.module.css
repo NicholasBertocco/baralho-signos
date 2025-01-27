@@ -1,13 +1,18 @@
 .conteinerMain{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height:80vh;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0; /* Espaço seguro para o Topo */
+    
 }
 
 .secaoBaralho{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 80%;
 }
